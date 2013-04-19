@@ -1,0 +1,50 @@
+body {
+	font-family: "Helvetica", Arial, sans-serif;
+}
+
+
+#home {
+	text-align: center;
+}
+
+
+#home .ui-controlgroup, .ui-collapsible-set {
+	width: 60%;
+	margin: 0 auto;
+	margin-top: 20px;
+	max-width: 300px;
+}
+
+#categories .ui-collapsible-set {
+	max-width: 400px;
+}
+
+div[data-role="page"] {
+	background-image: url('../images/woodGrainTile2.jpg');
+	background-repeat: repeat;
+	background-attachment: fixed;
+}
+div[data-role="content"] {
+	background: transparent;
+}
+
+#home img {
+	width: 50%;
+	max-width: 275px;
+}
+
+#videolist img {
+	display: block;
+	width: 90%;
+}
+
+.ui-icon-video {
+	background-image: url(../images/icon_video.png);
+	background-repeat: no-repeat;
+}
+
+.ui-icon-pics {
+	background-image: url(../images/icon_photo.png);
+	background-repeat: no-repeat;
+}
+

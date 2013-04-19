@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <widget xmlns = "http://www.w3.org/ns/widgets"
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+        id        = "com.christilaw.tom"
+        versionCode="1" 
+        version   = "1.0.0">
+
+    <!-- versionCode is optional and Android only -->
+
+    <name>Furniture Care App</name>
+
+    <description>
+        An app to help in the care of all types of furniture. 
+    </description>
+
+    <author href="https://tom.christilaw.com" email="tom@christilaw.com">
+        Tom Christilaw 
+    </author>
+
+</widget>
