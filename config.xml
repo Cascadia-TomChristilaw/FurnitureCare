@@ -3,14 +3,14 @@
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "com.christilaw.tom"
         versionCode="1" 
-        version   = "1.0.0">
+        version   = "1.5.0">
 
     <!-- versionCode is optional and Android only -->
 
-    <name>Furniture Care App</name>
+    <name>Furniture Deluxe</name>
 
     <description>
-        An app to help in the care of all types of furniture. 
+        An app that contains information on the care and deluxeing of various types of furniture.. 
     </description>
 
     <author href="https://tom.christilaw.com" email="tom@christilaw.com">
