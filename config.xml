@@ -7,6 +7,8 @@
 
     <!-- versionCode is optional and Android only -->
 
+    <icon src="icon.png" />
+    
     <name>Furniture Deluxe</name>
 
     <description>
