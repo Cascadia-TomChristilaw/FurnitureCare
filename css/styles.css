@@ -8,11 +8,11 @@ body {
 }
 
 
-#home .ui-controlgroup, .ui-collapsible-set {
+#home .ui-listview, .ui-collapsible-set {
 	width: 60%;
 	margin: 0 auto;
 	margin-top: 20px;
-	max-width: 300px;
+	max-width: 400px;
 }
 
 #categories .ui-collapsible-set {
@@ -48,3 +48,33 @@ div[data-role="content"] {
 	background-repeat: no-repeat;
 }
 
+ul[data-role="listview"] li,
+ul[data-role="listview"] li a {
+	text-align: center;
+}
+
+@media only screen and (min-width:700px) {
+
+	#home .ui-listview {
+		width: 40%;
+		margin: 0;
+		margin-left: 5em;
+		margin-top: 3em;
+		max-width: 500px;
+		display: inline-block;
+	}
+
+	#categories .ui-collapsible-set {
+		max-width: 400px;
+	}
+
+
+	#home {
+		text-align: left;
+	}
+	#home img {
+		width: 35%;
+		max-width: 225px;
+		margin-left: 5em;
+	}
+}
