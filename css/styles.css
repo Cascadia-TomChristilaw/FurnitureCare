@@ -76,7 +76,5 @@ ul[data-role="listview"] li a {
 		width: 30%;
 		max-width: 225px;
 		margin-left: 3em;
-		position: relative;
-		top: -2em;
 	}
 }
