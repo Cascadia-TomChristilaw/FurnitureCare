@@ -53,12 +53,12 @@ ul[data-role="listview"] li a {
 	text-align: center;
 }
 
-@media only screen and (min-width:700px) {
+@media only screen and (min-width:500px) {
 
 	#home .ui-listview {
 		width: 40%;
 		margin: 0;
-		margin-left: 5em;
+		margin-left: 3em;
 		margin-top: 3em;
 		max-width: 500px;
 		display: inline-block;
@@ -73,8 +73,10 @@ ul[data-role="listview"] li a {
 		text-align: left;
 	}
 	#home img {
-		width: 35%;
+		width: 30%;
 		max-width: 225px;
-		margin-left: 5em;
+		margin-left: 3em;
+		position: relative;
+		top: -2em;
 	}
 }
