@@ -60,7 +60,7 @@ ul[data-role="listview"] li a {
 @media only screen and (min-width:500px) and (max-height:500px) {
 
 	#home .ui-listview {
-		width: 30%;
+		width: 35%;
 		margin: 0;
 		margin-left: 3em;
 		max-width: 500px;
@@ -76,7 +76,7 @@ ul[data-role="listview"] li a {
 		text-align: left;
 	}
 	#home img {
-		width: 40%;
+		width: 35%;
 		max-width: 250px;
 		margin-left: 3em;
 	}
