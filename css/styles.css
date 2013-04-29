@@ -28,6 +28,10 @@ div[data-role="content"] {
 	background: transparent;
 }
 
+li[data-role="list-divider"] {
+	font-size: 1em;
+}
+
 #home img {
 	width: 50%;
 	max-width: 275px;
