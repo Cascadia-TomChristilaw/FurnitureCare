@@ -19,4 +19,6 @@
         Tom Christilaw 
     </author>
 
+    <preference name="phonegap-version" value="2.7.0" />
+
 </widget>
