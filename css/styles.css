@@ -15,14 +15,7 @@ body {
 	max-width: 400px;
 }
 
-#home p {
-	width: 70%;
-	border-radius: 10px;
-	padding: .5em;
-	margin: .5em auto;
-	background-color: #888866;
-	max-width: 375px;
-}
+
 
 #categories .ui-collapsible-set {
 	max-width: 400px;
