@@ -1,7 +1,6 @@
 document.addEventListener("deviceready", onDeviceReady, false);
 
-function onDeviceReady() {
-	$(document).on("#categories", "pageshow", function() {
+function onDeviceReady() {	
 		$('#categories .icons:first-of-type figure').addClass('visible');
 		$('.icons figure').click(function() {
 			if (!$(this).hasClass('selected')) {		
@@ -17,7 +16,6 @@ function onDeviceReady() {
 				}
 				$(this).parent().css('display', 'inline-block')
 					.css('width', '125px');	
-			}	
-		});
+			}
 	});
 }
