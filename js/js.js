@@ -1,7 +1,7 @@
 document.addEventListener("deviceready", onDeviceReady, false);
 
 function onDeviceReady() {
-	$(document).delegate("#categories", "pageshow", function() {
+	$(document).on("#categories", "pageshow", function() {
 		$('#categories .icons:first-of-type figure').addClass('visible');
 		$('.icons figure').click(function() {
 			if (!$(this).hasClass('selected')) {		
