@@ -59,6 +59,37 @@ ul[data-role="listview"] li a {
 	text-align: center;
 }
 
+.icons {
+	margin: 0 auto;
+	text-align: center;
+	width: 300px;
+}
+
+.icons figure {
+	display: none;
+	width: 30%;
+	margin: 0 1em;
+	color: #000;
+	font-weight: bold;
+}
+
+.icons figure img {
+	width: 100%;
+}
+
+.icons figure.visible {
+	display: inline-block;
+}
+
+.icons figure.visible.selected {
+	width: 50%;
+	opacity: .6;
+}
+
+/*.topIconBox figure {
+	display: inline-block;
+}
+*/
 @media only screen and (min-width:500px) and (max-height:500px) {
 
 	#home .ui-listview {
