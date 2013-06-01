@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$('#categories').live('pageshow', function () {
 	$('#categories .icons:first-of-type figure').addClass('visible');
 	$('.icons figure').click(function() {
 		if (!$(this).hasClass('selected')) {		
