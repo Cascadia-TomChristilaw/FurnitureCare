@@ -22,7 +22,8 @@ $(document).ready(function() {
 		$(this).clone().appendTo('#photos div.imgView');
 	});
 
-	$('#categories').bind("DOMSubtreeModified", function() {
+	// $('#categories').bind("DOMSubtreeModified", function() {
+	$('#categories').live('pagebeforeshow',function(event, ui){
 		$('#categories .icons:first-of-type figure').addClass('visible');
 		$('#categories .icons:last-of-type figure').removeClass('visible');
 		$('.icons').removeClass('shrunk');
