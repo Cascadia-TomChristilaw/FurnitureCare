@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(function() {		
 	$('#categories .icons:first-of-type figure').addClass('visible');
 	$('.icons figure').click(function() {
 		if (!$(this).hasClass('selected')) {		
@@ -12,8 +12,21 @@ $(document).ready(function() {
 			if ($(this).parent().hasClass('topIconBox')) {
 				$('.subIconBox figure').addClass('visible');
 			}
-			$(this).parent().css('display', 'inline-block')
-				.css('width', '125px');	
+			$(this).parent().addClass('shrunk');	
 		}	
 	});
+	
+
+	$('#photos div.thumbs img').click(function() {
+		$('#photos div.imgView').empty();
+		$(this).clone().appendTo('#photos div.imgView');
+	});
+
+	$('#categories').bind("DOMSubtreeModified", function() {
+		$('#categories .icons:first-of-type figure').addClass('visible');
+		$('#categories .icons:last-of-type figure').removeClass('visible');
+		$('.icons').removeClass('shrunk');
+		$('figure').removeClass('selected');
+	});	
 });
+

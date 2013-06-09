@@ -86,6 +86,19 @@ ul[data-role="listview"] li a {
 	opacity: .6;
 }
 
+.icons.shrunk {
+	display: inline-block;
+	width: 125px;
+}
+
+
+#photos div.thumbs img {
+	width: 49%;
+}
+#photos div.imgView img {
+	width: 99%;
+}
+
 /*.topIconBox figure {
 	display: inline-block;
 }
