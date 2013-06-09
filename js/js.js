@@ -23,7 +23,7 @@ $(document).ready(function() {
 	});
 
 	// $('#categories').bind("DOMSubtreeModified", function() {
-	$(document).delegate("#categories", "pageshow", function() {
+	$(document).delegate("#categories", "pagebeforeshow", function() {
 		$('#categories .icons:first-of-type figure').addClass('visible');
 		$('#categories .icons:last-of-type figure').removeClass('visible');
 		$('.icons').removeClass('shrunk');
