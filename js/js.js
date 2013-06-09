@@ -1,5 +1,4 @@
-$(document).ready(function() {		
-	$('#categories .icons:first-of-type figure').addClass('visible');
+$(document).ready(function() {	
 	$('.icons figure').click(function() {
 		if (!$(this).hasClass('selected')) {		
 			if ($(this).hasClass('care') || $(this).hasClass('upholstery')) {
@@ -13,6 +12,12 @@ $(document).ready(function() {
 				$('.subIconBox figure').addClass('visible');
 			}
 			$(this).parent().addClass('shrunk');	
+		}
+		else {
+			$(this).removeClass('selected');
+			$(this).parent().removeClass('shrunk')
+				.next().removeClass('shrunk')
+				.children().removeClass('selected');
 		}	
 	});
 	
@@ -21,9 +26,8 @@ $(document).ready(function() {
 		$('#photos div.imgView').empty();
 		$(this).clone().appendTo('#photos div.imgView');
 	});
-
-	// $('#categories').bind("DOMSubtreeModified", function() {
-	$(document).delegate("#categories", "pagebeforeshow", function() {
+	
+	$(document).delegate("#categories", "pagebeforeshow", function() {		
 		$('#categories .icons:first-of-type figure').addClass('visible');
 		$('#categories .icons:last-of-type figure').removeClass('visible');
 		$('.icons').removeClass('shrunk');
