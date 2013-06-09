@@ -1,12 +1,11 @@
 $(document).ready(function() {	
 	$('.icons figure').click(function() {
-		if (!$(this).hasClass('selected')) {		
+		if (!$(this).hasClass('selected')) {
+			$(this).addClass('selected');		
 			if ($(this).hasClass('care') || $(this).hasClass('upholstery')) {
-				$(this).addClass('selected')
-					.next().removeClass('visible');
+				$(this).next().removeClass('visible');
 			} else {
-				$(this).addClass('selected')
-					.prev().removeClass('visible');
+				$(this).prev().removeClass('visible');
 			}
 			if ($(this).parent().hasClass('topIconBox')) {
 				$('.subIconBox figure').addClass('visible');
@@ -15,9 +14,16 @@ $(document).ready(function() {
 		}
 		else {
 			$(this).removeClass('selected');
-			$(this).parent().removeClass('shrunk')
-				.next().removeClass('shrunk')
-				.children().removeClass('selected');
+			if ($(this).hasClass('care') || $(this).hasClass('upholstery')) {
+				$(this).next().addClass('visible');
+			} else {
+				$(this).prev().addClass('visible');
+			}
+			if ($(this).parent().hasClass('topIconBox')) {
+				$('.subIconBox figure').removeClass('visible selected')
+				.parent().removeClass('shrunk');
+			}
+			$(this).parent().removeClass('shrunk');
 		}	
 	});
 	
