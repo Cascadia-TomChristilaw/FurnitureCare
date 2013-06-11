@@ -59,10 +59,11 @@ $(document).ready(function() {
 	});
 	
 	$(document).delegate("#categories", "pagebeforeshow", function() {		
-		$('#categories .icons:first-of-type figure').addClass('visible');
-		$('#categories .icons:last-of-type figure').removeClass('visible');
+		$('#categories .topIconBox figure').addClass('visible');
+		$('#categories .subIconBox figure').removeClass('visible');
 		$('.icons').removeClass('shrunk');
 		$('figure').removeClass('selected');
+		$('#tutSelectionBox>div').removeClass('selectedCategory');
 	});	
 });
 
