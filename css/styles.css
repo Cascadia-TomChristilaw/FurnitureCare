@@ -155,7 +155,12 @@ ul[data-role="listview"] li a {
 	text-decoration: none;
 }
 
+.tutContent {
+	background: rgba(220, 220, 220, 0.5);
+	padding: 5px 15px;
+	border-radius: 12px;
+}
+
 video {
-	width: 90%;
-	margin: 0 auto;
+	width: 100%;
 }
