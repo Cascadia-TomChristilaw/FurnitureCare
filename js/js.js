@@ -1,3 +1,12 @@
+document.addEventListener("deviceready", onDeviceReady, false);
+
+function onDeviceReady() {
+	
+	$('#companyLink').click(function() {
+		window.open(encodeURI('http://apache.org'), '_blank', 'location=yes');
+	})
+}
+
 $(document).ready(function() {	
 	$('.icons figure').click(function() {
 		if (!$(this).hasClass('selected')) {
