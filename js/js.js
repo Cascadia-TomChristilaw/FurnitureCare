@@ -6,9 +6,12 @@ function onDeviceReady() {
 		window.open(encodeURI('http://thomasfurniturerepair.com'), '_blank', 'location=yes');
 	})
 }
+var touched, mainCat, subCat;
 
 $(document).ready(function() {	
-	$('.icons figure').click(function() {
+	$('.icons figure').click(function() {		
+		touched = $(this).attr('class').split(' ')[0];
+		console.log('touched = ' + touched);
 		if (!$(this).hasClass('selected')) {
 			$(this).addClass('selected');		
 			if ($(this).hasClass('care') || $(this).hasClass('upholstery')) {
@@ -17,11 +20,20 @@ $(document).ready(function() {
 				$(this).prev().removeClass('visible');
 			}
 			if ($(this).parent().hasClass('topIconBox')) {
+				mainCat = touched;
+				console.log('mainCat = ' + mainCat);
 				$('.subIconBox figure').addClass('visible');
+			}
+			if ($(this).parent().hasClass('subIconBox')) {
+				subCat = touched;
+				console.log('subCat = ' + subCat);
+				console.log('ID to target = ' + subCat + mainCat);
+				$('#tutSelectionBox #' + subCat + mainCat).addClass('selectedCategory');				
 			}
 			$(this).parent().addClass('shrunk');	
 		}
 		else {
+			$('#tutSelectionBox>div').removeClass('selectedCategory');
 			$(this).removeClass('selected');
 			if ($(this).hasClass('care') || $(this).hasClass('upholstery')) {
 				$(this).next().addClass('visible');
@@ -35,6 +47,10 @@ $(document).ready(function() {
 			$(this).parent().removeClass('shrunk');
 		}	
 	});
+
+	$('topIconBox').click(function() {
+
+	})
 	
 
 	$('#photos div.thumbs img').click(function() {

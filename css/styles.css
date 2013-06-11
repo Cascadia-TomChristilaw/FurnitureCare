@@ -131,3 +131,31 @@ ul[data-role="listview"] li a {
 		display: none;
 	}
 }
+
+#tutSelectionBox>div {
+	display: none;
+}
+
+#tutSelectionBox>div.selectedCategory {
+	display: block;
+}
+
+#tutSelectionBox ul {
+	margin-top: 50px;
+}
+#tutSelectionBox li {
+	text-align: center;
+	list-style-type: none;
+}
+
+#tutSelectionBox a {
+	color: Bisque;
+	text-shadow: 2px 2px DimGray;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+video {
+	width: 90%;
+	margin: 0 auto;
+}
