@@ -4,7 +4,7 @@ function onDeviceReady() {
 	
 	$('#companyLink').click(function() {
 		window.open(encodeURI('http://thomasfurniturerepair.com'), '_blank', 'location=yes');
-	})
+	});
 }
 var touched, mainCat, subCat;
 
